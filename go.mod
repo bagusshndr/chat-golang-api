@@ -1,4 +1,4 @@
-module chat-golang
+module chat-golang-api
 
 go 1.19
 
