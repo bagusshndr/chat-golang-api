@@ -2,10 +2,13 @@ package main
 
 import (
 	"net/http"
+
+	"github.com/bagusshndr/chat-golang-api/pkg/websocket"
 )
 
 func setupRoutes() {
-	// pool := websocket.NewPool()
+	pool := websocket.NewPool()
+	go pool.Start()
 }
 
 func main() {
